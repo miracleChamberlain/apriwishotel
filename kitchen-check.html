@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Givenchy Luxury Hotel & Suites::A Place For Qulity Hospitality Service - Google</title>
+    <meta  property="og:image" content="https://www.givenchyluxuryhotelandsuite.com/assets/images/pix1.jpg" />
+		<link rel="image_src" href=" https://www.givenchyluxuryhotelandsuite.com/assets/images/pix1.jpg" />
+    <meta charset="UTF-8">
+    <meta name="keywords" content="hotel in anambra state, club,hotel, resturant, Nigeria, amawbia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Givenchy Luxury Hotel & Suites">
+    <!-- This link is Google's fonts api -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+<body oncontextmenu="return false">
+	<!-- navbar page start -->
+
+	<nav class="navbar navbar-expand-lg navbar-light  bg-dark  sticky-top">
+		<a class="navbar-brand" href="#"><img class="rounded-circle" src="assets/images/pix1.jpg" width="60" height="50"></a>
+		<!-- Toggler/collapsibe Button -->
+</nav>
+	<!-- navbar page end -->
+  <section class="landing-page">
+	<img src="assets/images/pix1.jpg" class="img-fluid"  width="100%" height="100%" alt="Responsive image">
+	</section>
+
+  <p class="text-center mt-3">
+<b >kitchen Check-In</b>
+  </p>
+
+
+  <form method="post" id="sheetdb-form"
+  action="https://sheetdb.io/api/v1/f7ap4i5wnlrxj">
+
+	<div class="ml-4 mt-3">
+		Date: <input name="data[date]">
+	</div>
+  <div class="ml-4 mt-3">
+    Time: <input name="data[time]">
+  </div>
+    <div class="ml-4 mt-2">
+    	Name of food: <input name="data[name of food]">
+    </div>
+    <div class="ml-4 mt-2">
+    	food Price: <input name="data[food price]">
+    </div>
+    <div class="ml-4 mt-2">
+    	staff name: <input name="data[staff name]">
+    </div>
+    <button class="ml-3 mt-3" type="submit">Submit</button>
+</form>
+
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('Successful Register')
+			window.location.reload();
+    });
+  });
+</script>
+
+
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<img src="assets/images/pix1.jpg"  width="100px" ><b style="font-family: 'Open Sans', sans-serif;"> </b>
+</div>
+<div class="col-md-4 d-flex align-items-center mt-2">
+<h4 class="mr-4">STAY IN TOUCH:</h4>
+<a href="https://web.facebook.com/profile.php?id=61564479676012"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/givenchyluxuryhotel_official "><i class="fa fa-instagram"></i></a>
+<a href=" https://wa.me/+2347076639424?text=urlencodedtext"><img src="assets/images/pix32.jpg" class="rounded-circle ml-3" width="40" height="40"  alt=""></a>
+</div>
+</div>
+</div>
+</footer>
+<div class="text-center text-dark py-2" style="background-color: #dbdbdb;">
+<p class="m-0">&copy; 2025 Copyright. Givenchy Luxury Hotel & Suites </p>
+</div>
+
+
+
+
+    <script src="assets/js/jquery.js" charset="utf-8"></script>
+    <script src="assets/js/popper.min.js" charset="utf-8"></script>
+    <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
